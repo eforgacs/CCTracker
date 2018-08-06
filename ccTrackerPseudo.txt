@@ -1,0 +1,39 @@
+start program
+load account
+	app reads history
+	program determines next workout
+		option printout
+			all paths reported
+			program ends
+		option interactive
+			path is followed dynamically
+			?request to save workout
+			program ends
+
+class Menu (defer)
+class Account
+
+TypeOfWorkout
+	invalid
+	pushups
+	pullups
+	squats
+	leg_raises
+
+CCEngine
+	Workout nextWorkout(TypeOfWorkout, Record)
+
+Record
+	__init__(,name)
+	Workout lastWorkout(TypeOfWorkout)
+	recordWorkout(Workout)
+
+Workout
+	(all paths - flow chart)
+        print_full_workout
+	did_last_step() returns T/F
+	Exercise next_step(reps=0)
+	?? work_done ??
+
+
+
