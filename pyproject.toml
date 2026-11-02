@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cctracker"
+version = "0.1.0"
+description = "A tracker for Convict Conditioning workouts."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+cctracker = "cctracker.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["cctracker"]
